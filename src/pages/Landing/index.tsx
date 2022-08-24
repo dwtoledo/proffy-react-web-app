@@ -3,6 +3,7 @@ import proffyBanner from "../../assets/images/landing.svg";
 import findTeacherIcon from "./../../assets/images/icons/study.svg";
 import giveClassesIcon from "./../../assets/images/icons/give-classes.svg";
 import purpleHeartIcon from "./../../assets/images/icons/purple-heart.svg";
+import "./styles.css";
 
 function Landing() {
   return (
@@ -22,12 +23,12 @@ function Landing() {
         />
 
         <div className="landing-page__buttons-wrapper">
-          <button>
+          <button className="landing-page__find-teacher-bttn">
             <img src={findTeacherIcon} alt="Book Icon" />
             Find a teacher
           </button>
 
-          <button>
+          <button className="landing-page__give-classes-bttn">
             <img src={giveClassesIcon} alt="Board Icon" />
             Give classes
           </button>
