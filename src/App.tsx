@@ -1,8 +1,8 @@
 import "./assets/styles/global.css";
-import Landing from "./pages/Landing";
+import AppRoutes from "./pages/routes";
 
 function App() {
-  return <Landing />;
+  return <AppRoutes />;
 }
 
 export default App;

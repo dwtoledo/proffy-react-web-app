@@ -39,6 +39,10 @@
   gap: 1.6rem;
 }
 
+.landing-page__buttons-wrapper > a {
+  text-decoration: none;
+}
+
 .landing-page__find-teacher-bttn,
 .landing-page__give-classes-bttn {
   width: 30rem;

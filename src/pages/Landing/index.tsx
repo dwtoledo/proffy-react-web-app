@@ -4,6 +4,7 @@ import findTeacherIcon from "./../../assets/images/icons/study.svg";
 import giveClassesIcon from "./../../assets/images/icons/give-classes.svg";
 import purpleHeartIcon from "./../../assets/images/icons/purple-heart.svg";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 function Landing() {
   return (
@@ -23,15 +24,19 @@ function Landing() {
         />
 
         <div className="landing-page__buttons-wrapper">
-          <button className="landing-page__find-teacher-bttn">
-            <img src={findTeacherIcon} alt="Book Icon" />
-            Find a teacher
-          </button>
+          <Link to="/teachers">
+            <button type="button" className="landing-page__find-teacher-bttn">
+              <img src={findTeacherIcon} alt="Book Icon" />
+              Find a teacher
+            </button>
+          </Link>
 
-          <button className="landing-page__give-classes-bttn">
-            <img src={giveClassesIcon} alt="Board Icon" />
-            Give classes
-          </button>
+          <Link to="/form">
+            <button type="button" className="landing-page__give-classes-bttn">
+              <img src={giveClassesIcon} alt="Board Icon" />
+              Give classes
+            </button>
+          </Link>
         </div>
 
         <span className="landing-page__connections">
