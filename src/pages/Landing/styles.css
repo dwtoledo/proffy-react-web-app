@@ -45,8 +45,7 @@
 
 .landing-page__find-teacher-bttn,
 .landing-page__give-classes-bttn {
-  width: 30rem;
-  height: 10.4rem;
+  padding: 2.5rem;
   border: none;
   border-radius: 0.8rem;
   font-size: 2rem;
@@ -61,7 +60,6 @@
 
 .landing-page__find-teacher-bttn > img,
 .landing-page__give-classes-bttn > img {
-  width: 4rem;
   height: auto;
 }
 
@@ -97,7 +95,7 @@
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-areas:
       "logo banner banner"
-      "buttons button connections";
+      "buttons buttons connections";
   }
 
   .landing-page__logo {
@@ -122,6 +120,7 @@
 
   .landing-page__buttons-wrapper {
     grid-area: buttons;
+    justify-content: flex-start;
   }
 
   .landing-page__find-teacher-bttn,
