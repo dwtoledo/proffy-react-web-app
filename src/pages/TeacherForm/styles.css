@@ -1,0 +1,12 @@
+#teacher-form {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teacher-form__content {
+  margin-top: 2rem;
+  text-align: center;
+}

@@ -1,0 +1,44 @@
+#page-header {
+  background-color: var(--color-primary);
+  width: 100vw;
+}
+
+.page-header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.4rem;
+  padding: 0 10vw;
+}
+
+.page-header__back-icon {
+  width: 3.2rem;
+  height: auto;
+}
+
+.page-header__logo {
+  height: 1.5rem;
+  width: auto;
+}
+
+.page-header__content {
+  min-height: 25.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 10vw;
+  gap: 1rem;
+}
+
+.page-header__content > h1 {
+  color: var(--color-title-in-primary);
+  font-size: 3.6rem;
+  font-weight: 700;
+  max-width: 400px;
+}
+
+.page-header__content > p {
+  color: var(--color-text-in-primary);
+  font-size: 1.4rem;
+}
