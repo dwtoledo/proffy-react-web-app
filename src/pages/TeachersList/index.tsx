@@ -18,7 +18,10 @@ function TeachersList() {
 
   return (
     <div id="teachers-list">
-      <PageHeader title="Available Proffies">
+      <PageHeader
+        title="Available Proffies"
+        description="Filter the amazing teachers we have:"
+      >
         <TeachersFilter filtersOutput={filtersOutput} />
       </PageHeader>
 
