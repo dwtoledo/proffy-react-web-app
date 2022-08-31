@@ -1,6 +1,6 @@
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import teacherFiltersValidators from "./validators/teachers-filters-validators";
+import teachersFilterValidators from "./validators/filters-validators";
 import "./styles.css";
 
 interface IFilterFormInputs {
@@ -19,7 +19,7 @@ function TeachersFilter({ filtersOutput }: TeachersFilterProps) {
     handleSubmit,
     formState: { errors },
   } = useForm<IFilterFormInputs>({
-    resolver: yupResolver(teacherFiltersValidators),
+    resolver: yupResolver(teachersFilterValidators),
   });
 
   const onSubmit: SubmitHandler<IFilterFormInputs> = (

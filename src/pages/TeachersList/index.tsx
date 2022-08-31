@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 
 import PageHeader from "../../components/PageHeader";
-import TeachersFilter from "./components/TeachersFilter";
+import TeacherCard from "../../components/TeacherCard";
+import TeachersFilter from "../../components/TeachersFilter";
 
 import "./styles.css";
 
@@ -26,7 +27,8 @@ function TeachersList() {
       </PageHeader>
 
       <div className="teachers-list__content container">
-        <h2>teachers list content</h2>
+        <TeacherCard />
+        <TeacherCard />
       </div>
     </div>
   );
